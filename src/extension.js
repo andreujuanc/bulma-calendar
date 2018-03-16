@@ -7,7 +7,7 @@ Element.prototype.addEventsListener = function(events, listener = void 0) {
   }
 
   events.forEach(event => {
-    this.addEventListener(event, listener);
+    this.addEventListener(events, listener);
   });
 }
 

@@ -4,7 +4,8 @@
   "description": "Display a calendar for date selection or for planning management, in different colors and sizes",
   "main": "dist/bulma-calendar.sass",
   "scripts": {
-    "build": "gulp"
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development"
   },
   "repository": {
     "type": "git",
@@ -23,30 +24,10 @@
   },
   "homepage": "https://github.com/Wikiki/bulma-calendar#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.39",
-    "@babel/preset-env": "^7.0.0-beta.39",
-    "babel-core": "^7.0.0-beta.3",
     "bulma": "^0.6.2",
-    "camelcase": "^4.1.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-babel-minify": "^0.3.0",
-    "gulp-better-rollup": "^3.0.0",
-    "gulp-bump": "^3.1.0",
-    "gulp-clean-css": "^3.9.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-conventional-changelog": "^1.1.11",
-    "gulp-git": "^2.5.1",
-    "gulp-modular-release": "^0.5.3",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "rollup-plugin-babel": "^3.0.3",
-    "run-sequence": "^2.2.1"
+    "html-webpack-plugin": "^3.0.6",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
   },
   "files": [
     "dist/bulma-calendar.sass",
@@ -57,6 +38,15 @@
     "README.md"
   ],
   "dependencies": {
-    "camelcase": "^4.1.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "camelcase": "^4.1.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4"
   }
 }

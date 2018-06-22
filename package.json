@@ -82,5 +82,9 @@
   ],
   "dependencies": {
     "moment": "^2.22.2"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFiles": ["./test/mocks/createRange"]
   }
 }
